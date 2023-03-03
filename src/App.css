@@ -2,6 +2,7 @@
 
 .false-body {
   min-height: 100vh;
+  background-color: #2a9d8f;
   display: grid;
   place-content: center;
   font-family: "Barlow", sans-serif;
@@ -61,6 +62,7 @@
 .button {
   border-color: transparent;
   border-radius: 0.25em;
+  background-color: #264653;
   padding-inline: 1em;
   padding-block: 0.5em;
 }
