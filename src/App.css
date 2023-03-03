@@ -1,0 +1,97 @@
+@import url(index.css);
+
+.false-body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-family: "Barlow", sans-serif;
+  font-size: var(--fs-med);
+  line-height: 1.5;
+  padding: 1em;
+}
+
+.wrapper {
+  max-width: 35rem;
+  padding-inline: 2em;
+  padding-block: 2em;
+}
+
+.quote {
+  line-height: 1;
+}
+.quote:before {
+  content: '"';
+}
+
+.stack-s > * + * {
+  margin-block-start: 1em;
+}
+
+.stack-m > * + * {
+  margin-block-start: 2em;
+}
+
+.flex-apart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.flex-apart > * {
+  flex-basis: calc((30rem - 100%) * 999);
+  flex-grow: 1;
+}
+
+.button-group > :first-child {
+  order: 1;
+}
+
+@media screen and (min-width: 26.5rem) {
+  .flex-apart > * {
+    flex-basis: auto;
+    flex-grow: 0;
+  }
+
+  .button-group > :first-child {
+    order: 0;
+  }
+}
+
+.button {
+  border-color: transparent;
+  border-radius: 0.25em;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.rounded {
+  border-radius: 0.25em;
+}
+
+.block {
+  display: block;
+}
+
+.right-text {
+  text-align: end;
+}
+.center-text {
+  text-align: center;
+}
+
+.font-large {
+  font-size: var(--fs-lg);
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.italicize {
+  font-style: italic;
+}
